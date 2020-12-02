@@ -3,6 +3,8 @@ module Main
   ) where
 
 import Advent.Door1
+import Advent.Door2
+
 import Advent.Lib
 import qualified Data.Time as Time
 
@@ -31,7 +33,7 @@ door1 :: Maybe (IO String)
 door1 = Just $ openDoor Door1 1
 
 door2 :: Maybe (IO String)
-door2 = Nothing
+door2 = Just $ openDoor Door2 2
 
 door3 :: Maybe (IO String)
 door3 = Nothing
